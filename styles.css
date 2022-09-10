@@ -41,6 +41,7 @@ body {
 
 .expression {
     font-size: 32px;
+    min-height: 44px;
 }
 
 .number {

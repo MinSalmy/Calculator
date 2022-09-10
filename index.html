@@ -17,7 +17,7 @@
 </head>
 <body>
     <div class="calculator">
-        <div id="expression"></div> 
+        <div id="expression" class="display expression"></div> 
         <div id="number" class="display number">0</div> 
         <div class="dropdown">
             <button id="dropTrigonometry" onclick="showTrigonometryMenu()" class="button-dropTrigonometry">Trigonometry &#10552;</button>   
@@ -52,48 +52,48 @@
                 <button class="btn-arccot second hyperbolic invisible">coth<sup>-1</sup></button>
             </div>
         </div>
-        <div class="buttons">
+        <div id="board" class="buttons">
             <button id="buttonSwitch" class="btn-2nd" onclick="showAnotherFunctions()">2<sup>nd</sup></button> 
             <button id="deg" class="btn-degree">deg</button>    
             <button id="pi" class="btn-Pi">&pi;</button>            
             <button id="clear" data-key="46" class="btn-delete">C</button>
             <button id="backspace" data-key="8" class="btn-backspace">&#8678;</button>
-            <button id="changeable" class="btn-x2 first">x&sup2;</button>
-            <button id="changeable" class="btn-x3 second invisible">x&sup3;</button>
-            <button class="btn-1buttonX">1/x</button> 
-            <button class="btn-module">|x|</button>
-            <button class="btn-exp">e</button>
-            <button class="btn-percent">%</button>
-            <button id="changeable" class="btn-squareroot first">&radic;x</button>
-            <button id="changeable" class="btn-cuberoot second invisible">&#8731;x</button>
-            <button class="btn-leftbracket">(</button>
-            <button class="btn-rigthbracket">)</button>
-            <button class="btn-factorial">x!</button>
-            <button class="btn-buttonide">&divide;</button>
-            <button id="changeable" class="btn-XpowerY first">x<sup>y</sup></button>
-            <button id="changeable" class="btn-YrootX second invisible"><sup>y</sup>&radic;x</button>
+            <button id="sqr" class="btn-x2 first changeable">x&sup2;</button>
+            <button id="cube" class="btn-x3 second changeable invisible">x&sup3;</button>
+            <button id="1divX" class="btn-1divideX">1/x</button> 
+            <button id="module" class="btn-module">|x|</button>
+            <button id="e" class="btn-exp">e</button>
+            <button id="percent" class="btn-percent">%</button>
+            <button id="squareroot" class="btn-squareroot first changeable">&radic;x</button>
+            <button id="cuberoot" class="btn-cuberoot second changeable invisible">&#8731;x</button>
+            <button id="leftbracket" class="btn-leftbracket">(</button>
+            <button id="rigthbracket" class="btn-rigthbracket">)</button>
+            <button id="factorial" class="btn-factorial">x!</button>
+            <button id="divide" class="btn-divide">&divide;</button>
+            <button id="XpowerY" class="btn-XpowerY first changeable">x<sup>y</sup></button>
+            <button id="YrootX" class="btn-YrootX second changeable invisible"><sup>y</sup>&radic;x</button>
             <button id="main" data-key="Digit7" class="btn-7">7</button>
             <button id="main" data-key="Digit8" class="btn-8">8</button>
             <button id="main" data-key="Digit9" class="btn-9">9</button>
-            <button data-key="106" class="btn-multiply">&times;</button>
-            <button id="changeable" class="btn-tenPowerX first">10<sup>x</sup></button>
-            <button id="changeable" class="btn-twoPowerX second invisible">2<sup>x</sup></button>
+            <button id="multiply" data-key="106" class="btn-multiply">&times;</button>
+            <button id="tenPowerX" class="btn-tenPowerX first changeable">10<sup>x</sup></button>
+            <button id="twoPowerX" class="btn-twoPowerX second changeable invisible">2<sup>x</sup></button>
             <button id="main" data-key="Digit4" class="btn-4">4</button>
             <button id="main" data-key="Digit5" class="btn-5">5</button>
             <button id="main" data-key="Digit6" class="btn-6">6</button>
-            <button data-key="189" class="btn-subtract">&minus;</button>
-            <button id="changeable" class="btn-log first">log</button>
-            <button id="changeable" class="btn-logXbyY second invisible">log<sub>y</sub>x</button>
+            <button id="subtract" data-key="189" class="btn-subtract">&minus;</button>
+            <button id="log" class="btn-log first changeable">log</button>
+            <button id="logXbyY" class="btn-logXbyY second changeable invisible">log<sub>y</sub>x</button>
             <button id="main" data-key="Digit1" class="btn-1">1</button>
             <button id="main" data-key="Digit2" class="btn-2">2</button>
             <button id="main" data-key="Digit3" class="btn-3">3</button>
-            <button data-key="107" class="btn-add">+</button>
-            <button id="changeable" class="btn-ln first">ln</button>
-            <button id="changeable" class="btn-ePowerX second invisible">e<sup>x</sup></button>
+            <button id="add" data-key="107" class="btn-add">+</button>
+            <button id="ln" class="btn-ln first changeable">ln</button>
+            <button id="ePowerX" class="btn-ePowerX second changeable invisible">e<sup>x</sup></button>
             <button id="main" data-key="sign" class="btn-sign">+/-</button>
             <button id="main" data-key="Digit0" class="btn-0">0</button>
             <button id="main" data-key="NumpadDecimal" class="btn-dot">.</button> 
-            <button data-key="187" class="btn-equal selected">=</button>
+            <button id="equal" data-key="187" class="btn-equal selected">=</button>
         </div>
     </div>
 </body>
