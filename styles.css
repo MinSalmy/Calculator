@@ -34,10 +34,17 @@ body {
     left: 1000px;*/
 }
 
-.display {
-    
+.display {    
     text-align: end;
     margin: 2px;
+}
+
+.expression {
+    font-size: 32px;
+}
+
+.number {
+    font-size: 48px;
 }
 
 .button-dropTrigonometry {    
@@ -60,12 +67,16 @@ body {
     height: 60px;
     width: 105px;
 }
-
+/*
 .second {
     display: none;
 }
 
 .hyperbolic {
+    display: none;
+}*/
+
+.invisible {
     display: none;
 }
 
@@ -82,7 +93,7 @@ body {
 
 [class^="btn-"]{
     font-family: 'WindSong', 'Fleur De Leah', cursive;
-    font-size: 40px;
+    font-size: 32px;
     margin: 2px;
 }
 
